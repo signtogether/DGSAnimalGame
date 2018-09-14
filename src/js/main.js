@@ -17,10 +17,8 @@ class Choice {
 var animalImageElement = document.getElementById('animalImage');
 
 
-var
-
-var frosch = new Animal('img/frosch.png', 'video/frosch.mp4', [
-  new Choice('video/frosch.mp4', true)
+var frosch = new Animal('./img/frosch.png', './video/frosch.mp4', [
+  new Choice('./video/frosch.mp4', true)
 ]);
 var currentAnimal;
 var currentChoice;
