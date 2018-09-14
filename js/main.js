@@ -16,9 +16,19 @@ class Choice {
 
 var animalImageElement = document.getElementById('animalImage');
 
+var choiceGreen = new Choice('./video/grün.mp4',true);
+var choiceWollknaeul= new Choice('./video/wollknäuel.mp4',false);
+var choiceWasser= new Choice('./video/wasser.mp4',true);
+var choiceSchaf= new Choice('./video/schaf.mp4',false);
+var choiceHuepfen= new Choice('./video/hüpfen.mp4',true);
+
+
+
+
+
 
 var frosch = new Animal('./img/frosch.png', './video/frosch.mp4', [
-  new Choice('./video/frosch.mp4', true)
+  choiceGreen,choiceWollknaeul,choiceWasser,choiceSchaf,choiceHuepfen
 ]);
 var currentAnimal;
 var currentChoice;
