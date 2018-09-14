@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://vjs.zencdn.net/7.1.0/video-js.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+<div onclick="animalClick()" class="middleBubble iconBubble">
+  <img id="animalImage" class="animalImage">
+</div>
+<div onclick="choiceClick(0)" class="choiceBubble x0"></div>
+<div onclick="choiceClick(1)" class="choiceBubble x1"></div>
+<div onclick="choiceClick(2)" class="choiceBubble x2"></div>
+<div onclick="choiceClick(3)" class="choiceBubble x3"></div>
+<div onclick="choiceClick(4)" class="choiceBubble x4"></div>
+
+<!-- The Modal -->
+<div id="videomodal" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('videomodal').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+      <video id="player" class="video-js" controls preload="auto" width="800px" height="800px" data-setup="{}"></video>
+      <div id="choices" class="choices">
+        <button onclick="question(true)" class="choiceButton">Ja</button>
+        <button onclick="question(false)" class="choiceButton">Nein</button>
+      </div>
+      <div id="feedback" class="feedback">
+        <img id="success" class="feedbackImage success" src="img/smiley_happy.jpg">
+        <img id="fail" class="feedbackImage fail" src="img/smiley_sad.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://vjs.zencdn.net/7.1.0/video.js"></script>
+<script src="js/main.js"></script>
+
+
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+
+</body>
+
+</html>
