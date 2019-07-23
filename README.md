@@ -5,6 +5,11 @@ This is a game to learn something about animals in DGS (Deutsche Gebärdensprach
 
 **Start playing [here](https://signtogether.github.io/DGSAnimalGame).**
 
+As you can see, this is an early prototype. The idea of the game is to learn the signs for a certain animal and some that are connected to it like: frog, water, jumping, fly, ...
+
+When you click one of the bubbles, a video appears and you need to decide if that sign is connected to the animal or not. If you were correct and it belongs to the animal, the bubble should stay and show a screenshot of the sign. If not, the bubble should burst and a new bubble appear, until you have guessed all signs correctly.
+
+Target group are 3-6 year olds who cannot read.
 
 Collaborate!
 ------------
