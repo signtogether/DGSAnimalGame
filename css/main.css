@@ -145,6 +145,17 @@ body {
   display: none;
 }
 
+.feedbackImage {
+  display: block;
+  margin: 0 auto;
+}
+
+.translation {
+  background-color: white;
+  text-align: center;
+  font-size: large;
+}
+
 .choiceButton {
   flex-direction: row;
   width: 7vw;
@@ -166,7 +177,7 @@ body {
   width: 10vw;
 }
 
-.choiceBubble:after {
+.choiceBubbleEmpty:after {
   background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(70%, rgba(255, 255, 255, 0))); /* Chrome,Safari4+ */
   background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%); /* Chrome10+,Safari5.1+ */
@@ -212,4 +223,14 @@ body {
   left: 0.5vw;
   position: absolute;
   width: 9vw;
+}
+
+.choiceBubbleSuccess {
+  background-image: url("../img/smiley_happy.jpg");
+  background-position: center;
+}
+
+.choiceBubbleFailure {
+  background-image: url("../img/smiley_sad.jpg");
+  background-position: center;
 }

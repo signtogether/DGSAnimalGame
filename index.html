@@ -22,11 +22,11 @@
 <div onclick="animalClick()" class="middleBubble iconBubble">
   <img id="animalImage" class="animalImage">
 </div>
-<div onclick="choiceClick(0)" class="choiceBubble x0"></div>
-<div onclick="choiceClick(1)" class="choiceBubble x1"></div>
-<div onclick="choiceClick(2)" class="choiceBubble x2"></div>
-<div onclick="choiceClick(3)" class="choiceBubble x3"></div>
-<div onclick="choiceClick(4)" class="choiceBubble x4"></div>
+<div id="choiceBubble0" onclick="choiceClick(0, this)" class="choiceBubble choiceBubbleEmpty x0"></div>
+<div id="choiceBubble1" onclick="choiceClick(1, this)" class="choiceBubble x1"></div>
+<div id="choiceBubble2" onclick="choiceClick(2, this)" class="choiceBubble x2"></div>
+<div id="choiceBubble3" onclick="choiceClick(3, this)" class="choiceBubble x3"></div>
+<div id="choiceBubble4" onclick="choiceClick(4, this)" class="choiceBubble x4"></div>
 
 <!-- The Modal -->
 <div id="videomodal" class="w3-modal">
@@ -43,6 +43,9 @@
         <img id="success" class="feedbackImage success" src="img/smiley_happy.jpg">
         <img id="fail" class="feedbackImage fail" src="img/smiley_sad.jpg">
       </div>
+    </div>
+    <div class="translation">
+      <span id="translation"></span>
     </div>
   </div>
 </div>
